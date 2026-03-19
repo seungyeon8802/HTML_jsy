@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            .a1{ font-size:30px; }
+            .a2{ font-style:italic; } /*글자모양*/
+            .a3{ font-weight:bold; } /*글자두께*/
+            .a4{ font-family:"궁서", dotum, "돋움", sans-serif; } /*sans-serif :돋움체 비슷하게생김. 모든 브라우저 접근 가능함.*/
+            .a5{ font-variant:small-caps;} /*소문자 사이즈 유지하면서 형태는 대문자로 표시*/
+            
+            /*폰트관련 모든 속성을 한줄로 정의할 땐 해당 순서로 꼭 해야 함*/
+            /*두께, 스타일, 스몰캡, 사이즈, 패밀리*/
+            /*.a6{ font:bold normal small-caps 18px "돋움", sans-serif} */
+            /*bold를 적용하려면 글꼴까지 함께 정의되어 있어야 한다*/
+            /*사이즈만 정의하려면 font-size라고 정확히 명시되어 있어야 한다*/
+            .a6{ font:bold 18px "돋움", sans-serif } 
+        </style>
+    </head>
+    <body>
+        <p class="a1">글자 크기</p>
+        <p class="a2">글자 스타일</p>
+        <p class="a3">글자 두께</p>
+        <p class="a4">글꼴</p>
+        <p class="a5">The end</p>
+        <p class="a6">폰트에 적용되는 css순서</p>
+    </body>
+</html>

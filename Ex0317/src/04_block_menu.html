@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            *{margin:0; padding:0;} /*여백 제거*/
+
+            ul{ width: 130px;}
+            li{ list-style:none;} /*기존에 가지고 있던 '점' 제거*/
+            a{ text-decoration: none; /*a태그에 붙어있는 밑줄 제거*/
+               background: #f30;
+               padding: 5px;
+               display:block;/*인라인 요소(span, a 등)를 강제로 블록 요소로 바꾸 */
+               margin:3px 0;
+               color:#fff;  /*글자색상변경*/
+               font-weight: bold;}
+               /*a태그에 마우스를 얹었을 때 동작하는 css*/
+            a:hover{ background: #0c0; /*마우스가 얹어짐을 감지할 때 (특수한 상황에) 동작함*/
+                     color:#ff0;}
+            /* 중요 :: a:active는 a:hover 밑에 작성해야함 순서 중요 ::: */
+            a:active{ color:pink;} /*마우스 클릭을 감지하는 클래스( 클릭했을 때 색상 감지 ) + hover보다 밑에 작성해야함 */
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <h1>Menu</h1>
+
+            <ul>
+                <li><a href=#>COMPANY</a></li>
+                <li><a href=#>PRODUCT</a></li>
+                <li><a href=#>SERVICE</a></li>
+                <li><a href=#>COMMUNITY</a></li>
+            </ul>
+
+        </div>
+    </body>
+</html>

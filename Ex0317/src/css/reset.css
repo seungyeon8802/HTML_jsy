@@ -1,0 +1,4 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+table{ border-collapse: collapse;} /*테이블이 가진 2겹짜리가 1겹으로 바뀜*/

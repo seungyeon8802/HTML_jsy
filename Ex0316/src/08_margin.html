@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- margin: 간격을 벌리는데 사용되는 속성 -->
+        <title>margin(바깥쪽 여백)</title>
+        <style>
+            div{ border:5px solid red; }
+            /* margin이 겹칠 경우 더 큰 margin값으로 흡수됨(포함되는 형태로 적용) */
+            .box1{ margin:20px; } /*상하좌우 모두 적용*/
+            .box2{ margin:20px 50px; } /*상하, 좌우*/
+            .box3{ margin:20px 50px 30px; } /*상, 좌우, 하*/
+            .box4{ margin:20px 30px 50px 70px; } /*상,우,하,좌 (시계방향으로 적용)*/
+        </style>
+
+    </head>
+    <body>
+        <div class="box1">바깥쪽 여백 연습</div>
+        <div class="box2">바깥쪽 여백 연습</div>
+        <div class="box3">바깥쪽 여백 연습</div>
+        <div class="box4">바깥쪽 여백 연습</div>
+    </body>
+</html>

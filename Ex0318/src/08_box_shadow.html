@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <style>
+        p {
+            width: 150px;
+            padding: 20px;
+            background: #aaf;
+            border-radius: 5px;
+            box-shadow: 10px 10px 15px #333;
+            /* box-shadow : x좌표 얼마나 그림자가 튀어나오게 할건지 결정, y좌표 얼마나 그림자가 튀어나오게 할건지 결정, 그림자가 번지는 정도, 그림자의 색깔*/
+            /* box-shadow: 10px(x좌표) 10px(y좌표) 15px(그림자크기, 그림자 번지는 수준) #333(색상); */
+        }
+
+        h1 {
+            width: 150px;
+            padding: 10px;
+            background: #aaf;
+            /* 음수값을 주면 들어가면 위 왼쪽으로 적용됨 */
+            /* box-shadow: -10px -5px 10px #333; */
+            box-shadow: inset 5px -5px 15px 2px #333;
+            /* inset 그림자 안쪽으로 들어가는 효과
+            inset을 사용하면 그림자 두께를 추가로 주어야하고 상자 안으로 그림자가 나온다
+            box-shadow: inset 5px -5px 15px 2px #333;
+             x좌표,y좌표,그림자크기(번지는 정도),그림자의 두께,색상 */
+        }
+    </style>
+</head>
+
+<body>
+    <p>내용</p>
+
+    <h1>내용</h1>
+
+</body>
+
+</html>

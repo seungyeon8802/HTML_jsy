@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+	<style>
+        li:first-child{ color:red;} /*li들 중, 첫번째 li만 속성 지정*/
+        li:last-child{ color:blue;} /*얘는 가장 아래 li만 속성 지정*/
+        li:nth-child(odd){ color:pink; } /*홀수번째 위치의 값 변경*/
+        li:nth-child(even){ color:green; } /*짝수 번째 위치의 값 변경*/
+        li:nth-child(4n){background: yellow;} /*4의 배수번째 위치의 값 변경*/
+        li:nth-child(6){background: aqua;} /*해당 (숫자)위치의 값만 변경*/
+        
+	</style>
+    </head>
+    <body>
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+            <li>F</li>
+            <li>G</li>
+            <li>H</li>
+        </ul>
+
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+        </ul>
+    </body>
+</html>

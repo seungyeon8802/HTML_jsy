@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+
+    </head>
+    <body>
+        <table border="1">
+            <!-- caption : 알아서 '가운데'정렬-->
+              <!-- semantic : 포함된 콘텐츠의 특정 의미를 정의하고 목적을 갖고 만들어지는 태그 
+  즉, 브라우저로 하여금 해당 태그를 인식함 ( 검색 관련하에 "속도 증가" ) -->
+            <!-- tts가 어떤 순으로 읽을 지 코드 위치에 따라 정할 수 있음
+                thead, tdoby, tfood으로 테이블의 영역을 구분함
+                tfood위치가 바뀌어도 TTS(음성낭독기) 실행시 코드가 바뀐 순서대로 읽어줌. 외관상 보여지는건 똑같음 -->
+             <caption>데이터 테이블</caption>
+
+        <tr>
+            <td>구분</td>
+            <td>테블릿pc</td>
+            <td>스마트폰</td>
+        </tr>
+
+        <tr>
+            <td>상반기 판매량</td>
+            <td>2만대</td>
+            <td>5만대</td>
+        </tr>
+
+        <tr>
+            <td>하반기 판매량</td>
+            <td>3만대</td>
+            <td>11만대</td>
+        </tr>
+
+        <tr>
+            <td>총 판매량</td>
+            <td>5만대</td>
+            <td>16만대</td>
+        </tr>
+
+        </table>
+
+        <hr/>
+
+        <table border="1">
+            <caption>데이터 테이블</caption>
+
+         <thead>  
+            <tr>
+            <td>구분</td>
+            <td>테블릿pc</td>
+            <td>스마트폰</td>
+        </tr>
+        </thead> 
+
+        <tfoot>
+        <tr>
+            <td>총 판매량</td>
+            <td>5만대</td>
+            <td>16만대</td>
+        </tr>
+        </tfoot>
+
+        <tbody>
+        <tr>
+            <td>상반기 판매량</td>
+            <td>2만대</td>
+            <td>5만대</td>
+        </tr>
+
+        <tr>
+            <td>하반기 판매량</td>
+            <td>3만대</td>
+            <td>11만대</td>
+        </tr>
+        </tbody>
+
+        </table>
+
+    </body>
+</html>

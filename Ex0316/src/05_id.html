@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            /* id 접근은 #로 접근 */
+            /* ID는 페이지에서 딱 하나뿐인 특별한 요소를 가리킬 때 주로 사용,
+                특정 요소만 '강력한 스타일'을 줄 때  */
+            #a1{ color: rgb(255, 0, 21); }
+            #a2{ color: pink; }
+            /* 아이디가 a1인 h1태그를 찾으세요 */
+            h1#a1 span.sp{ color: purple;}
+        </style>
+    </head>
+    <body>
+        <!-- 클래스는 중복O id는 절대 중복되면 X  -->
+         <!-- 매우 중요 !!! 하나의 html페이지에서 id가 중복되는 경우는 절대로  XXXX -->
+        <h1 id="a1">아이디<span class="sp"> 연습1</span></h1>
+        <h1 id="a2">아이디 연습2</h1>
+        <h1 id="a2">아이디 연습2</h1>
+    </body>
+</html>

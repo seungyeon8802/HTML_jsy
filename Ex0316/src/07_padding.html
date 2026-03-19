@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- padding: 태그 안에서 텍스트 사이의 거리를 말함
+            상화좌우가 전부 적용 다르게 하려면 각각 적어주면 됨 -->
+        <title>padding(안쪽여백)</title>
+
+        <style>
+            p{ border: 5px solid plum;   
+               background:yellow;}
+           
+            .box1{ padding:20px;} /*패딩 태그 하나만 넣었더니, '상하좌우'속성 모두 다 적용됨*/
+            
+            .box2{ padding:10px 50px;} /*상하, 좌우*/
+            
+            .box3{ padding:10px 50px 30px; } /*상, 좌우, 하*/
+            /*상 우 하 좌( 시계방향 )*/
+            .box4{ padding:20px 30px 50px 70px; }
+        </style>
+
+    </head>
+    <body>
+        <p class="box1">padding(안쪽여백) 연습</p>
+        <p class="box2">padding(안쪽여백) 연습</p>
+        <p class="box3">padding(안쪽여백) 연습</p>
+        <p class="box4">padding(안쪽여백) 연습</p>
+    </body>
+</html>

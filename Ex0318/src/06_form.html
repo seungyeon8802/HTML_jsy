@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+<link rel="stylesheet" href="css/reset.css"/>
+	<style>
+
+	</style>
+    </head>
+    <body>
+        <form action="test.html" method="post">  
+            <!-- action : submit을 통해서 전송될 페이지 url임. 
+                    method(전송방식) : get-공개, post-비공개 -->
+            <p>
+                입력상자 <input type="text"/>
+            </p>
+            <p>
+                id <input type="text" size="10" name="myid"/> 
+                <br/>
+                pwd <input type="password" size="10" name="mypwd"/>
+            </p>
+
+            <p>
+                메일수신여부 <br/>
+                <input type="radio" value="yes" name="receive"/> 예 
+                <input type="radio" value="no" name="receive"/> 아니오
+            </p>
+            <p>
+                파일 <input type="file"/>
+            </p>
+
+            <p>
+                <select name="subject">
+                    <option value="html">HTML5</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" value="전송"/>
+                <input type="reset" value="취소"/>
+            </p>
+        
+        </form>
+    </body>
+</html>

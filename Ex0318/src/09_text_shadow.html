@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <style>
+        /* p{ text-shadow: 2px(x좌표) 3px(y좌표) 2px(그림자 두께) #333(색상);} */
+        p {
+            text-shadow: 2px 3px 2px #333;
+        }
+
+        h1 {
+            margin: 100px;
+            /* text-shadow: 그림자 여러개 적용 가능 ,(콤마) 찍고 적기 */
+            text-shadow: 0 0 4px #ccc, 
+            0 -5px 4px #ff3, 
+            2px -10px 6px #fd3, 
+            -2px -15px 11px #f80, 
+            2px -19px 18px #f20;
+        }
+
+        h1:hover{text-shadow: 
+            0 0 4px #cca, 
+            0 -5px 4px #ffa, 
+            2px -10px 6px #fda, 
+            -2px -15px 11px #f8a, 
+            2px -19px 18px #f2a;
+        }
+    </style>
+</head>
+
+<body>
+    <p>HTML</p>
+
+    <h1>FIRE!!</h1>
+</body>
+
+</html>

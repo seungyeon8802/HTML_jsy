@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+           /*li에 점을 빼고 이미지를 넣고 싶은경우 */
+           /*여백은 상하가 먼저! 배경위치는 좌우가 먼저!*/
+            .cls1 li{ list-style: none; 
+                   background: url(resources/image/arrow.gif) no-repeat 0 center; /*좌우는 x 위아래로 center*/ 
+                   padding-left: 10px;} 
+            .cls2 li{ list-style: none;
+                    background: url(resources/image/bg_dotted.gif) no-repeat 0 65%;
+                    padding-left:7px;}
+        
+        </style>
+    </head>
+    <body>
+        <ul class="cls1">
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+        </ul>
+
+        <hr/>
+
+        <ul class="cls2">
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+        </ul>
+  
+
+    </body>
+</html>
