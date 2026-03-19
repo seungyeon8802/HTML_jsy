@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <script>
+            let num = 1;  //전역 변수 선언
+            let path = "resources/image/img";  //이미지 경로 설정
+
+            function next(  ){   //'다음'버튼을 눌렀을 때 실행될 함수 
+                num++;
+
+                if( num > 7 ){
+                    num = 1;   //이미지 7번이상 클릭시 다시 1번 사진 출력
+
+                }
+                document.getElementById('gallery').src = path + num + ".jpg";
+                                            // .src 는 바꿀 이미지 경로
+        
+            }
+        </script>
+        <style>
+            a{text-decoration: none;} 
+        </style>
+    </head>
+    <body>
+        <a href="#" onclick="prev()">
+            <img src="resources/image/left_btn.png"/>
+        </a>
+
+        <img src="resources/image/img1.jpg" width="300" height="200" id="gallery"/>
+
+        <a href="#" onclick="next()">
+            <img src="resources/image/right_btn.png"/>
+        </a>
+    </body>
+</html>

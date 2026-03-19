@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <script>
+            /*
+            점수 : 50 (ex)
+            성적 :F (ex)
+            90 이상 A
+            80이상 B
+            70이상이면 C
+            60이상이면 D
+            59이하이면 F
+            */
+            let num = Number(prompt("점수: " + "<br/>"))
+            let res = Number(prompt("성적 : " + "<br/>"))
+
+            if( num >= 90 ){
+                res = 'A';
+            } else if( num >= 80 ){
+                res = 'B';
+            }else if( num >= 70 ){
+                res = 'C';
+            }else if( num >= 60 ){
+                res = 'D';
+            }else{
+                res = 'F';
+            }
+            document.write("점수 : ", num, '<br/>');
+            document.write("성적 : " + res);
+
+
+            /* let grade =  ( num >= 90 ) ? A : 
+                        ( num >= 80 ) ? B : 
+                        ( num >= 70 ) ? C :
+                        ( num >= 60 ) ? D :
+                        ( num <= 59 ) ? F */
+                          
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

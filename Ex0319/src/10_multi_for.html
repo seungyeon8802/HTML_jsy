@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <script>
+            document.write("<table border='1'>");  
+
+            document.write("<tr>");
+
+        for (let i = 2; i <= 9; i++) {
+        document.write("<th>"+ i + "단" + "</th>");
+    }
+            document.write("</tr>");  // 맨 윗줄 2단~9단
+  
+        for (let i = 1; i <= 9; i++) {
+                document.write("<tr>");    // 행(가로) 9줄
+            for (let j = 2; j <= 9; j++) {
+            
+            document.write("<td>" + j + " x " + i + " = " + (j * i) +  "</td>");
+            }
+                document.write("</tr>");
+        }
+
+        document.write("</table>");
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

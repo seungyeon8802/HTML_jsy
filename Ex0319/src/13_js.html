@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <script>
+
+            //함수(function) 밖에서는 검색코드 넣는거 x
+            function send( a ){ //안녕 = a
+                let myp = document.getElementById('myp');  
+                myp.innerHTML = a;  //myp는 앞줄에서 가져온 <p>태그 객체 자체임
+            }
+
+            function send2(){
+                let myp = document.getElementById('myp');
+                let txt = document.getElementById("txt")   //여기서 let txt는 123을 가지고 있음
+            //    txt.value = '안녕하세요';   // .value로 txt값(=123)을 안녕하세요로 바꿈
+                myp.innerHTML = txt.value;
+            }
+
+            function result(){
+                let inp = Number(document.getElementById('input1').value)   // .value있나 없나의 차이는 ? .value를쓰면 inp 입력창에 입력한 그 값을 기져온것임
+            
+                let res = "";
+                for( let i = 0; i < inp; i++ ){
+                    res += "<li>메뉴</li>"
+                }
+                let ul = document.getElementById('myul');
+                ul.innerHTML = res;
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="button" value="버튼1" onclick="send('안녕')"/>
+
+        <p id="myp"> 
+            aaa
+        </p> 
+
+        <hr/>
+
+        <input type = "text" size = "5" id="txt" value="123"/> 
+        <input type="button" value="확인" onclick="send2();"/>  
+        <!-- send2는 text에 입력한 --> 
+         
+        <hr/>
+        <!-- 버튼 과 같은 것 아니면 type=""안넣어도 실행됨 -->
+        <input id = "input1"  />    <!--입력상자  -->
+        <input type="button" value="확인" onclick="result()" />
+        
+        <ul id="myul"></ul>
+
+    </body>
+</html>
