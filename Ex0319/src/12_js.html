@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <script>
+            function send1(){
+                alert("클릭감지"); //경고창 메시지 팝업창 뜸
+            }
+            function send2(n){ //파라미터 받을 때 자료형 아무것도 안 씀(밑에 send2에 10 넣음)
+                alert(n);
+                
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="버튼1" onclick="send1();"/>
+        <br/>
+        <input type="button" value="버튼2" onclick="send2(10);"/>
+    </body>
+</html>

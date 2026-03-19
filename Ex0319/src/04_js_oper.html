@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <script>
+            
+            let gender = prompt( "당신의 성별은?" );  // scanner대신 사용. 입력받으면 gender에 값 들어감
+            let age = prompt( "당신의 나이는? ");
+            
+            let res = Number(age) >= 20 && age < 30 && gender == '남자'; // age >= : 타입 상관없이 값만 비교 
+            //Number 형태는 실제 정수형태로 비교해야 할 때 사용ㅇ  
+            document.write( res );
+         /*   document.write( age + "<br/>");  
+            document.write( age === 20 ); */
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
